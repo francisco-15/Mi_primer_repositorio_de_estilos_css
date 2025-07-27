@@ -1,9 +1,8 @@
 @use "./../abstracts/variables" as *;
+@use "./../abstracts/mixins" as *;
 
-/* Versión mobile first */
-
-/* header */
 header {
+  /* Versión mobile */
   background-color: $secondary-color;
   display: flex;
   flex-direction: column;
@@ -27,6 +26,18 @@ header {
       &:hover {
         color: rgb(245, 245, 245);
       }
+    }
+  }
+
+  /* versión tablet */
+  @include breakpoint(tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .nav-header ul {
+      flex-direction: row;
+      gap: $gap-d;
     }
   }
 }

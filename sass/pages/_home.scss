@@ -1,9 +1,8 @@
 @use "./../abstracts/variables" as *;
 @use "./../abstracts/mixins" as *;
 
-/* Hero mobile */
-
 #hero {
+  /* Hero mobile */
   height: 80vh;
   background-image: linear-gradient(
       0deg,
@@ -16,7 +15,7 @@
   background-position: center center, -230px -100px;
 
   .container {
-    max-width: 450px;
+    max-width: 95%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -42,9 +41,29 @@
     margin-top: $space-margin-top-a;
     color: white;
   }
+
+  /* Versión tablet */
+  @include breakpoint(tablet) {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    background-position: center center, -10px -86px;
+
+    .container {
+      max-width: 95%;
+    }
+
+    h1 {
+      font-size: $font-size-big-g;
+    }
+
+    p {
+      font-size: $font-size-small-b;
+    }
+  }
 }
 
-/* results moblie */
+/* results mobile */
 #results {
   background-color: $secondary-color;
   display: flex;
@@ -69,6 +88,16 @@
 
     p {
       color: $quinary-color;
+    }
+  }
+
+  /* Versión tablet */
+  @include breakpoint(tablet) {
+    margin-top: 0;
+    height: 30vh;
+
+    span {
+      font-size: $font-size-big-d;
     }
   }
 }
@@ -101,5 +130,15 @@
   p {
     font-size: $font-size-small-b;
     color: $tertiary-color;
+  }
+
+  /* Versión tablet */
+  @include breakpoint(tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .card {
+      width: auto;
+    }
   }
 }
