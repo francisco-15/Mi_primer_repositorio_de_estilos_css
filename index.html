@@ -9,14 +9,11 @@
   <body>
     <div class="container">
       <header>
-        <picture>
+        <picture class="logo">
+          <source srcset="./img/logo_archesky.png" media="(max-width: 767px)" />
           <source
             srcset="./img/logo_archesky@2x.png"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="./img/logo_archesky.png"
-            media="(max-width: 1199px)"
+            media="(min-width: 768px)"
           />
           <img
             src="./img/logo_archesky.png"
@@ -35,21 +32,23 @@
       </header>
       <main>
         <section id="hero">
-          <h1>
-            <span class="color">smart</span> <span>business</span> <br />
-            <span>with</span> <span class="color">smart</span>
-            <span>people</span>
+          <div class="container">
+            <h1>
+              <span class="color">smart</span> <span>business</span> <br />
+              <span>with</span> <span class="color">smart</span>
+              <span>people</span>
+            </h1>
             <p>
               Grow your business to the next level to improve your business
-              performance to stay competitive
+              performance to stay competitive.
             </p>
-          </h1>
-          <a href="#" class="btn-hero">Let’s Discuss</a>
+            <a href="#" class="btn-hero">Let’s Discuss</a>
+          </div>
         </section>
 
-        <section class="hero-number">
+        <section id="results">
           <article class="we-result">
-            <span>10+</span>
+            <span>10</span><span class="plus">+</span>
             <p>years experience</p>
           </article>
           <article class="we-result">
@@ -61,8 +60,9 @@
             <p>satisfied customers</p>
           </article>
         </section>
-        <section class="services">
-          <article>
+
+        <section id="services">
+          <article class="card">
             <img
               src="./fonts/icon/business_planning.svg"
               alt="Business planning icon"
@@ -73,7 +73,7 @@
               <br />consectetur adipiscing elit.
             </p>
           </article>
-          <article>
+          <article class="card">
             <img
               src="./fonts/icon/financial_planning.svg"
               alt="Financial Planning icon"
@@ -84,7 +84,7 @@
               <br />consectetur adipiscing elit.
             </p>
           </article>
-          <article>
+          <article class="card">
             <img
               src="./fonts/icon/marketing.svg"
               alt="Digital Marketing icon"
@@ -95,7 +95,7 @@
               <br />consectetur adipiscing elit.
             </p>
           </article>
-          <article>
+          <article class="card">
             <img src="./fonts/icon/market.svg" alt="Data analysis icon" />
             <h2>Data Analysis</h2>
             <p>

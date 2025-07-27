@@ -1,0 +1,105 @@
+@use "./../abstracts/variables" as *;
+@use "./../abstracts/mixins" as *;
+
+/* Hero mobile */
+
+#hero {
+  height: 80vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(128, 128, 128, 0.4),
+      rgba(128, 128, 128, 0.4)
+    ),
+    url(./../../img/hero.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center center, -230px -100px;
+
+  .container {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    padding-top: $space-margin-top-b;
+  }
+
+  h1 {
+    font-size: $font-size-big-f;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $senary-color;
+
+    .color {
+      color: $secondary-color;
+    }
+  }
+
+  p {
+    font-size: $font-size-small-a;
+    margin-top: $space-margin-top-a;
+    color: white;
+  }
+}
+
+/* results moblie */
+#results {
+  background-color: $secondary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap-d;
+  padding-top: 1.3em;
+  padding-bottom: 1.3em;
+  margin-top: $space-margin-top-c;
+
+  .we-result {
+    text-align: center;
+
+    span {
+      font-size: $font-size-big-a;
+      font-weight: bold;
+    }
+
+    .plus {
+      font-weight: 400;
+    }
+
+    p {
+      color: $quinary-color;
+    }
+  }
+}
+
+/* services mobile */
+
+#services {
+  margin: auto;
+  margin-top: $space-margin-top-c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: $gap-d;
+
+  .card {
+    border: 2px solid $secondary-color;
+    border-radius: 10px;
+    padding: 1em;
+    width: 90vw;
+    background-image: linear-gradient(45deg, $tertiary-color, $secondary-color);
+  }
+
+  h2 {
+    font-size: $font-size-big-a;
+    font-weight: 200;
+    margin-bottom: $space-margin-bottom-a;
+  }
+
+  p {
+    font-size: $font-size-small-b;
+    color: $tertiary-color;
+  }
+}

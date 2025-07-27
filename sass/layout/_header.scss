@@ -1,0 +1,32 @@
+@use "./../abstracts/variables" as *;
+
+/* Versión mobile first */
+
+/* header */
+header {
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .logo {
+    margin-top: $space-margin-top-a;
+    margin-bottom: $space-margin-top-a;
+  }
+
+  .nav-header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: $space-margin-top-a;
+
+    .btn-nav-header {
+      text-transform: capitalize;
+      color: $tertiary-color;
+      font-size: $font-size-small-a;
+      &:hover {
+        color: rgb(245, 245, 245);
+      }
+    }
+  }
+}

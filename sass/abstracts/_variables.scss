@@ -1,1 +1,52 @@
-$roboto-font: 'Roboto', sans-serif; 
+/* Función de fuentes */
+$roboto-font: "Roboto", sans-serif;
+
+/* Funciónes de beakpoint para viewport */
+$br-tablet: 768 px;
+$br-tablet-horizontal: 1024px;
+$br-desktop: 1200px;
+$br-desktop-xl: 1400px;
+
+/* Colores */
+$primary-color: #fafafa;
+$secondary-color: #94d9d3;
+$secondary-color-hover: #46c9be;
+$tertiary-color: rgba(0, 0, 0, 0.7);
+$quaternary-color: rgb(255, 255, 250);
+$quinary-color: rgb(0, 0, 0, 0.6);
+$senary-color: rgb(0, 0, 0);
+
+/*Tamaño de fuente */
+$font-size-small-a: 1.2em;
+$font-size-small-b: 1.3em;
+$font-size-small-c: 1.5em;
+$font-size-medium-a: 1.5em;
+$font-size-medium-b: 1.7em;
+$font-size-big-a: 2em;
+$font-size-big-b: 2.5em;
+$font-size-big-c: 2.6em;
+$font-size-big-d: 2.8em;
+$font-size-big-e: 3em;
+$font-size-big-f: 3.5em;
+
+/* Espacio de articulos */
+$space-margin-top-a: 0.8em;
+$space-margin-top-b: 1em;
+$space-margin-top-c: 1.2em;
+$space-margin-top-d: 1.8em;
+$space-margin-top-e: 2.4em;
+$space-margin-top-f: 5em;
+
+$space-margin-bottom-a: 0.2em;
+
+/* Valores para los display: flex */
+$gap-a: 5px;
+$gap-b: 10px;
+$gap-c: 15px;
+$gap-d: 20px;
+$gap-e: 25px;
+
+/* Tamaños para icnonos tipo gráficos */
+$size-icon-a: 1em;
+$size-icon-b: 2.5em;
+$size-icon-c: 3em;

@@ -1,0 +1,33 @@
+@use "./variables" as *;
+
+/* breakpoint */
+@mixin breakpoint($br) {
+  @if $br == tablet {
+    @media (min-width: $br-tablet) {
+      @content;
+    }
+  }
+
+  @if $br == tablet_horizontal {
+    @media (min-width: $br-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $br == desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  }
+
+  @if $br == desktop_xl {
+    @media (min-width: $desktop_xl) {
+      @content;
+    }
+  }
+}
+
+/* Estilo génerico de botones */
+@mixin btn-generic-style {
+  box-shadow: 2px 2px 7px rgb(0, 0, 0, 0.5);
+}

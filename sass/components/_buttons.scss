@@ -1,0 +1,13 @@
+@use "./../abstracts/variables" as *;
+@use "./../abstracts/mixins" as *;
+
+.btn-hero {
+  color: $quaternary-color;
+  background-color: $secondary-color;
+  padding: 1em 1.2em;
+  margin-top: $space-margin-top-f;
+  @include btn-generic-style;
+  &:hover {
+    background-color: $secondary-color-hover;
+  }
+}
