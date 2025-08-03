@@ -15,13 +15,7 @@
   }
 
   @if $br == desktop {
-    @media (min-width: $desktop) {
-      @content;
-    }
-  }
-
-  @if $br == desktop_xl {
-    @media (min-width: $desktop_xl) {
+    @media (min-width: $br-desktop) {
       @content;
     }
   }

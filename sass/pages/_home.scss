@@ -1,6 +1,15 @@
 @use "./../abstracts/variables" as *;
 @use "./../abstracts/mixins" as *;
 
+body {
+  @include breakpoint(desktop) {
+    background-image: url(./../../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 56em -3em;
+  }
+}
+
 #hero {
   /* Hero mobile */
   height: 80vh;
@@ -29,7 +38,7 @@
     font-size: $font-size-big-f;
     text-transform: uppercase;
     font-weight: bold;
-    color: $senary-color;
+    color: $tertiary-color;
 
     .color {
       color: $secondary-color;
@@ -48,6 +57,7 @@
     display: flex;
     align-items: center;
     background-position: center center, -10px -86px;
+    height: 20vh;
 
     .container {
       max-width: 95%;
@@ -59,6 +69,26 @@
 
     p {
       font-size: $font-size-small-b;
+    }
+  }
+
+  /* Versión de desktop */
+  @include breakpoint(desktop) {
+    height: auto;
+    background-image: none;
+    background-size: auto;
+    background-repeat: unset;
+    background-position: unset;
+
+    .container {
+      margin: 0;
+      align-items: start;
+      margin-top: $space-margin-top-b;
+      padding-left: $pace-padding-left;
+    }
+
+    p {
+      color: $tertiary-color;
     }
   }
 }
@@ -100,6 +130,15 @@
       font-size: $font-size-big-d;
     }
   }
+
+  /* Versión desktop */
+  @include breakpoint(desktop) {
+    background-color: $primary-color;
+    justify-content: start;
+    padding-left: $pace-padding-left;
+    background-color: transparent;
+    height: 20vh;
+  }
 }
 
 /* services mobile */
@@ -112,6 +151,7 @@
   align-items: center;
   justify-content: center;
   gap: $gap-d;
+  height: 30vh;
 
   .card {
     border: 2px solid $secondary-color;
@@ -140,5 +180,31 @@
     .card {
       width: auto;
     }
+
+    /* versión desktop */
+    @include breakpoint(desktop) {
+      display: flex;
+      flex-direction: row;
+
+      .card {
+        border: none;
+        border-radius: 0;
+        background-image: none;
+        background-color: $quaternary-color;
+        padding: $padding-x-a $padding-y-a;
+
+        h2 {
+          font-size: $font-size-small-c;
+          color: $Septenary-color;
+        }
+      }
+    }
+  }
+}
+
+body > .container {
+  @include breakpoint(tablet_horizontal) {
+    margin: auto;
+    max-width: 95%;
   }
 }

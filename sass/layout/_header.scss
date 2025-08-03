@@ -34,12 +34,21 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
     width: 100%;
 
     .nav-header ul {
       flex-direction: row;
       gap: $gap-d;
+    }
+  }
+
+  /* Versión desktop */
+  @include breakpoint(desktop) {
+    background-color: transparent;
+    height: 10vh;
+
+    .btn-nav-header:hover {
+      color: red;
     }
   }
 }

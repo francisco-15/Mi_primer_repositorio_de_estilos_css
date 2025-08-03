@@ -4,8 +4,7 @@ $roboto-font: "Roboto", sans-serif;
 /* Funciónes de beakpoint para viewport */
 $br-tablet: 768px;
 $br-tablet-horizontal: 1024px;
-$br-desktop: 1200px;
-$br-desktop-xl: 1400px;
+$br-desktop: 1440px;
 
 /* Colores */
 $primary-color: #fafafa;
@@ -15,6 +14,7 @@ $tertiary-color: rgba(0, 0, 0, 0.7);
 $quaternary-color: rgb(255, 255, 250);
 $quinary-color: rgb(0, 0, 0, 0.6);
 $senary-color: rgb(0, 0, 0);
+$Septenary-color: rgba(0, 0, 0, 0.8);
 
 /*Tamaño de fuente */
 $font-size-small-a: 1.2em;
@@ -37,8 +37,12 @@ $space-margin-top-c: 1.2em;
 $space-margin-top-d: 1.8em;
 $space-margin-top-e: 2.4em;
 $space-margin-top-f: 5em;
-
+$space-margin-top-g: 6em;
+$space-margin-top-h: 7em;
 $space-margin-bottom-a: 0.2em;
+$pace-padding-left: 18em;
+$padding-x-a: 2em;
+$padding-y-a: 4em;
 
 /* Valores para los display: flex */
 $gap-a: 5px;
