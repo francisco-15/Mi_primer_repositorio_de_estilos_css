@@ -3,7 +3,7 @@
 
 body {
   @include breakpoint(desktop) {
-    background-image: url(./../../img/hero.jpg);
+    background-image: url(/img/hero.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 56em -3em;
@@ -18,7 +18,7 @@ body {
       rgba(128, 128, 128, 0.4),
       rgba(128, 128, 128, 0.4)
     ),
-    url(./../../img/hero.jpg);
+    url(/img/hero.jpg);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center center, -230px -100px;
