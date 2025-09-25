@@ -42,13 +42,15 @@ git clone git@github.com:francisco-15/Mi_primer_repositorio_de_estilos_css.git
 cd Mi_primer_repositorio_de_estilos_css 
 
 # 3. Install dependencies (necessary for Sass compilation)
-npm install```
+npm install
+```
 
 ## ▶️ Usage
 
 # Start local server
+```
 npm run dev
-
+```
 ## 📧 Contact
 
 * **Name**: Francisco Latan.
@@ -98,12 +100,15 @@ git clone git@github.com:francisco-15/Mi_primer_repositorio_de_estilos_css.git
 cd Mi_primer_repositorio_de_estilos_css 
 
 # 3. Instala las dependencias (necesario para compilar Sass)
-npm install```
+npm install
+```
 
 ## ▶️ Uso
 
 # Iniciar servidor local
+```
 npm run dev
+```
 
 ## 📧 Contacto
 * **Nombre:** Francisco Latan
