@@ -36,10 +36,10 @@ Follow these steps to clone the project and set it up locally:
 
 ```bash
 # 1. Clone the repository
-git clone git@github.com:francisco-15/Mi_primer_repositorio_de_estilos_css.git
+git clone git@github.com:francisco-15/header_business_agency_fe.git
 
 # 2. Go to the project directory
-cd Mi_primer_repositorio_de_estilos_css 
+cd code 
 
 # 3. Install dependencies (necessary for Sass compilation)
 npm install
@@ -94,10 +94,10 @@ Sigue estos pasos para clonar el proyecto y configurarlo localmente:
 
 ```bash
 # 1. Clona el repositorio
-git clone git@github.com:francisco-15/Mi_primer_repositorio_de_estilos_css.git
+git clone git@github.com:francisco-15/header_business_agency_fe.git
 
 # 2. Accede a la carpeta del proyecto
-cd Mi_primer_repositorio_de_estilos_css 
+cd code 
 
 # 3. Instala las dependencias (necesario para compilar Sass)
 npm install
